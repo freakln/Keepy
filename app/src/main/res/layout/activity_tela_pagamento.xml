@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/candy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telaPagamento">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="367dp"
+        android:layout_height="359dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="50dp"
+        app:contentPadding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/header_tl_pagamento"
+                android:layout_width="147dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/pag"
+                android:textAlignment="center"
+                android:textSize="@dimen/Header_titulos"
+                app:layout_constraintBottom_toTopOf="@+id/txt_escolhe_cliente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tl_pg_lb_saldoDevido"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="28dp"
+                android:gravity="center"
+                android:textSize="24sp"
+
+                app:layout_constraintBottom_toTopOf="@+id/camp_valor_pg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/txt_escolhe_cliente"
+                android:layout_width="267dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="24dp"
+                android:autofillHints="no"
+                android:ems="10"
+                android:hint="@string/autoNome"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/tl_pg_lb_saldoDevido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/camp_valor_pg"
+                android:layout_width="267dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="84dp"
+                android:autofillHints="@string/vl_pago"
+
+                android:ems="10"
+                android:hint="@string/vl_pago"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_tl_pg_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#f48fb1"
+                android:text="@string/Cancelar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_tl_pg_ok"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_tl_pg_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#f48fb1"
+                android:text="@string/Botao_Cadastrar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_tl_pg_cancel" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

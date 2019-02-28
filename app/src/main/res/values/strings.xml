@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name" translatable="false">Didinha Brigadeiros</string>
+    <string name="Botao_Tela_cadProduto" translatable="false">Cadastrar Produto</string>
+    <string name="Botao_Tela_cadCliente" translatable="false">Cadastrar Cliente</string>
+    <string name="Botao_Tela_cadVenda" translatable="false">Cadastrar Venda</string>
+    <string name="Botao_Cadastrar" translatable="false">Cadastrar</string>
+    <string name="Nome" translatable="false">Nome:</string>
+    <string name="valor" translatable="false">Valor do Produto</string>
+    <string name="Cancelar" translatable="false">Cancelar</string>
+    <string name="sNome" translatable="false">Sobrenome:</string>
+    <string name="mail" translatable="false">E-mail:</string>
+    <string name="phone" translatable="false">Telefone:</string>
+    <string name="hintNome" translatable="false">Digite o nome do Produto</string>
+    <string name="hintValor" translatable="false">Informe o valor do Produto:</string>
+    <string name="hintNomeCliente" translatable="false">Nome</string>
+    <string name="hintSNomeCliente" translatable="false">Sobrenome</string>
+    <string name="hintMailCliente" translatable="false">email</string>
+    <string name="hintPhoneCliente" translatable="false">Telefone</string>
+    <string name="cad" translatable="false">Cadastrar</string>
+    <string name="cancel" translatable="false">Cancelar</string>
+    <string name="cadOK" translatable="false">Candastro realizado com sucesso</string>
+    <string name="title_activity_listar_produto" translatable="false">Produto Cadastrados</string>
+    <string name="menuEditar" translatable="false">Editar</string>
+    <string name="menuDeletar" translatable="false">Excluir</string>
+    <string name="atualizar" translatable="false">Atualizar</string>
+    <string name="editar" translatable="false">Editar</string>
+    <string name="produto" translatable="false">Digite o nome Produto:</string>
+    <string name="valorP" translatable="false">Digite valor do Produto:</string>
+    <string name="cadProduto" translatable="false">Cadastrar Produto</string>
+    <string name="cadCliente" translatable="false">Cadastrar Cliente</string>
+    <string name="listProduto" translatable="false">Listar Produtos</string>
+    <string name="listCliente" translatable="false">Lista De Clientes</string>
+    <string name="venda" translatable="false">Realizar Venda</string>
+    <string name="ddd" translatable="false">DDD</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="navVenda" translatable="false">Vendas Realizadas</string>
+    <string name="autoNome" translatable="false">Informe o nome </string>
+    <string name="autoSnome" translatable="false">Informe o Sobrenome</string>
+    <string name="autofone" translatable="false">Digite o telefone</string>
+    <string name="autoMail" translatable="false">Informe o E-mail</string>
+    <string name="HeaderlistaCliente" translatable="false">Lista de Clientes Cadastrados</string>
+    <string name="HeaderlistaProdutos" translatable="false">Lista de Produtos Cadastrados</string>
+    <string name="edCliente" translatable="false">Editar cliente</string>
+    <string name="pag" translatable="false">Pagamento</string>
+    <string name="select_cliente" translatable="false">Selecione o Cliente</string>
+    <string name="vl_pago" translatable="false">Informe o valor pago</string>
+    <string name="esc_cliente" translatable="false">Informe o cliente</string>
+    <string name="navpagamento" translatable="false">Cadastrar Pagamento</string>
+    <string name="navPagRealizados" translatable="false">Pagamentos Realizados</string>
+    <string name="header_tl_relatorio" translatable="false">Selecione o Cliente</string>
+    <string name="periodo" translatable="false">Periodo</string>
+    <string name="TipoRel" translatable="false">Tipo do Relatorio</string>
+    <string name="tlvendas" translatable="false">Registrar a Venda</string>
+    <string name="select_produto" translatable="false">Selecionar o Produto</string>
+    <string name="select_venda" translatable="false">Pedido</string>
+    <string name="quant" translatable="false">Quantidade:</string>
+    <string name="add" translatable="false">Adicionar</string>
+    <string name="cliente" translatable="false">Cliente:</string>
+    <string name="prod" translatable="false">Produto:</string>
+    <string name="totPedido" translatable="false">Total do Pedido:</string>
+    <string name="unid" translatable="false">Unidades:</string>
+    <string name="total" translatable="false">Total:</string>
+    <string name="btn_gRelatorio" translatable="false">Gerar Relatório</string>
+    <string name="totalReceita" translatable="false">Total de Receita:</string>
+    <string name="totalPag" translatable="false">Total em Pagamentos no mes:</string>
+    <string name="totalVeda" translatable="false">Vendas no mês:</string>
+    <string name="totProd" translatable="false">Produtos vendidos:</string>
+</resources>

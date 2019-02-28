@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/candy"
+    tools:context=".ListarProduto">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_ft_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:tint="@color/branco"
+        app:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/colorPrimary"
+        app:srcCompat="?android:attr/homeAsUpIndicator"
+        android:focusable="true" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="368dp"
+        android:layout_height="574dp"
+
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="584dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header_listar_produtos"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:text="@string/HeaderlistaProdutos"
+                android:textAlignment="center"
+                android:textSize="@dimen/Header_titulos" />
+
+            <ListView
+                android:id="@+id/listViewProdutos"
+                android:layout_width="wrap_content"
+                android:layout_height="536dp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

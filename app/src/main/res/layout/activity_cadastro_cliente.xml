@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/candy"
+
+    app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+    app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+    tools:context=".CadastroCliente">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="357dp"
+        android:layout_height="428dp"
+        app:cardCornerRadius="50dp"
+        app:contentPadding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+            tools:context=".CadastroCliente">
+
+            <EditText
+                android:id="@+id/campo_nome_cadCli"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:autofillHints="@string/autoNome"
+
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintNomeCliente"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/campo_Snome_cadCli"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_cadastro_cliente"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/campo_Snome_cadCli"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintSNomeCliente"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/campo_mail_cadCli"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/campo_nome_cadCli"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/campo_mail_cadCli"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:autofillHints="autoMail"
+
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintMailCliente"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/campo_phone_cadCli"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/campo_Snome_cadCli"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/campo_phone_cadCli"
+                android:layout_width="221dp"
+                android:layout_height="45dp"
+
+
+                android:autofillHints="@string/hintPhoneCliente"
+
+                android:ems="10"
+                android:hint="@string/hintPhoneCliente"
+                android:inputType="phone"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/botao_cancelar_cadCli"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/campo_ddd"
+                app:layout_constraintTop_toBottomOf="@+id/campo_mail_cadCli"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/botao_cancelar_cadCli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cancelar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/botao_cadastrar_cadCli"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/campo_phone_cadCli" />
+
+            <Button
+                android:id="@+id/botao_cadastrar_cadCli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/Botao_Cadastrar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/botao_cancelar_cadCli"
+                app:layout_constraintTop_toBottomOf="@+id/campo_phone_cadCli" />
+
+            <EditText
+                android:id="@+id/campo_ddd"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:autofillHints="@string/ddd"
+
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/ddd"
+                android:inputType="numberSigned"
+                app:layout_constraintBottom_toTopOf="@+id/botao_cancelar_cadCli"
+                app:layout_constraintEnd_toStartOf="@+id/campo_phone_cadCli"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/campo_mail_cadCli"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/header_cadastro_cliente"
+                android:layout_width="246dp"
+                android:layout_height="37dp"
+
+                android:text="@string/cadCliente"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="cursive"
+                app:layout_constraintBottom_toTopOf="@+id/campo_nome_cadCli"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
