@@ -276,6 +276,7 @@ public class BancoDados extends SQLiteOpenHelper {
         db.close();
 
 
+
         return listaPagamentos;
 
     }
@@ -310,7 +311,6 @@ public class BancoDados extends SQLiteOpenHelper {
 
     String totalArrecadado() {
         SQLiteDatabase db = this.getReadableDatabase();
-        String total;
 
 
         String query = "select sum(" + COLUNA_VALOR_VENDA + ") from " + TABELA_VENDAS + " where strftime('%m'," + COLUNA_DATA + ") = strftime('%m','now')";
@@ -320,12 +320,14 @@ public class BancoDados extends SQLiteOpenHelper {
         if (c != null)
             c.moveToFirst();
 
-        total = c.getString(0);
+        c.close();
+        db.close();
+
+
+        String total = c.getString(0);
         if (total.isEmpty())
             total = "0";
 
-        c.close();
-        db.close();
 
 
         return total;
@@ -335,7 +337,6 @@ public class BancoDados extends SQLiteOpenHelper {
 
     String totalPagaNoMes() {
         SQLiteDatabase db = this.getReadableDatabase();
-        String total;
 
 
         String query = "select sum(" + COLUNA_VALORPAGO + ") from " + TABELA_PAGAMENTO + " where strftime('%m'," + COLUNA_DATA + ") = strftime('%m','now')";
@@ -345,10 +346,16 @@ public class BancoDados extends SQLiteOpenHelper {
         if (c != null)
             c.moveToFirst();
 
-        total = c.getString(0);
+        String total = c.getString(0);
 
         c.close();
         db.close();
+
+
+        switch (total = c.getString(0)) {
+        }
+        if (total.isEmpty())
+            total = "0";
 
 
         return total;
@@ -374,6 +381,11 @@ public class BancoDados extends SQLiteOpenHelper {
         db.close();
 
 
+        total = c.getString(0);
+        if (total.isEmpty())
+            total = "0";
+
+
         return total;
 
 
@@ -395,6 +407,10 @@ public class BancoDados extends SQLiteOpenHelper {
 
         c.close();
         db.close();
+
+        total = c.getString(0);
+        if (total.isEmpty())
+            total = "0";
 
 
         return total;
