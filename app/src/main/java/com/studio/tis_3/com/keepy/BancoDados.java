@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -322,6 +321,8 @@ public class BancoDados extends SQLiteOpenHelper {
             c.moveToFirst();
 
         total = c.getString(0);
+        if (total.isEmpty())
+            total = "0";
 
         c.close();
         db.close();
